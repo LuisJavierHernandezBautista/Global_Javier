@@ -2,6 +2,9 @@ from FuncionesPDF import *
 from DatosEstaticos import *
 listaNombres = []
 listaEdades = []
+#cantidades = []
+#compras = [] 
+#costo = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 def menu():
     opcion = 1
     
@@ -30,3 +33,10 @@ def pedirDatos():
 def ImprimirDatos():
     for i in range(len(listaNombres)):
         print(f"Nombre: ) {listaNombres[i]} Edad: {listaEdades[i]}")
+
+#def listarProducto():    
+    
+    #piezas = int(input("¿Cuantas paquetes de levadoras quieres? "))
+    #cantidades[0] = cantidades[0]+piezas
+    #compras[0] = (cantidades[0]*costo[0])
+    #contadorElementos=contadorElementos+piezas

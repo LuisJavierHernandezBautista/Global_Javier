@@ -1,7 +1,11 @@
 from reportlab.pdfgen import canvas
 from FuncionesQR import *
+import datetime
+import locale
+locale.setlocale(locale.LC_ALL, '')
+fecha_actual = datetime.datetime.now()
 ruta = "C:/Users/yesen/OneDrive/Escritorio/funciones/"
-nombreArchivo = ruta + "reporteGlobal.pdf"
+nombreArchivo = ruta + "reporteGlobal.pdf_"+fecha_actual.strftime('%d_%m_%Y_%H_%M_%S')+ ".pdf"
 nombreQR = ruta + "miQR.pdf"
 
 def generarPDF(listaNombres, listaEdades):
